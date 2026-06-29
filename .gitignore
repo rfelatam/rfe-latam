@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Claude Code
+.claude/
+
+# Adobe Illustrator (no necesario en producción)
+*.ai
+
+# Material de referencia/diseño
+Secciones/

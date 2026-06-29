@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta property="og:title" content="Hacer red, o cómo catalizar el judaísmo en los tiempos que corren" />
+<meta property="og:description" content="Por Marcos Juejati — Presidente de Lamroth Hakol y miembro de RFE Latam. Una reflexión sobre las redes como modelo para el judaísmo contemporáneo." />
+<meta property="og:image" content="Marcos_Juejati.jpg" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rfe-latam.netlify.app/articulo-juejati.html" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hacer red — Marcos Juejati · RFE LATAM</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+  :root {
+    --teal: #2A9D8F;
+    --teal-dark: #247B71;
+    --teal-bright: #34B2A3;
+    --teal-20: #D8EFED;
+    --navy-dark: #1A1A2E;
+    --navy-mid: #1E2E3E;
+    --navy-card: #1A2840;
+    --marfil: #F8F7F4;
+    --marfil-dark: #EDEAE4;
+    --white: #FFFFFF;
+    --text-dark: #1A1A2E;
+    --text-mid: #3D4A5C;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'DM Sans',sans-serif; background:var(--marfil); color:var(--text-dark); font-size:18px; line-height:1.7; }
+  h1,h2,h3,h4 { font-family:'Cormorant Garamond',serif; line-height:1.2; }
+
+  /* NAV */
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:#1a2233; padding:0 48px; height:90px; display:flex; align-items:center; justify-content:space-between; }
+  .nav-logo { display:flex; align-items:center; background:none; }
+  .nav-logo img { height:78px; width:auto; display:block; }
+  .nav-links { display:flex; align-items:center; gap:18px; position:absolute; left:50%; transform:translateX(-50%); white-space:nowrap; }
+  .nav-links a { font-family:'DM Sans',sans-serif; font-size:0.72rem; font-weight:500; letter-spacing:0.03em; text-transform:uppercase; color:#FFFFFF; text-decoration:none; transition:color 0.2s; white-space:nowrap; }
+  .nav-links a:hover { color:var(--teal); }
+  .nav-cta { background:var(--teal); color:white !important; text-decoration:none; padding:10px 24px; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; transition:background 0.2s; }
+  .nav-cta:hover { background:var(--teal-dark) !important; }
+
+  /* HERO */
+  #hero { min-height:100vh; background:#e8f0f5; display:flex; align-items:center; padding:120px 80px 80px; }
+  .hero-inner { max-width:1200px; margin:0 auto; width:100%; display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
+  .hero-text { display:flex; flex-direction:column; align-items:flex-start; }
+  .hero-title { font-size:clamp(32px,4vw,52px); font-weight:700; color:#1a2233; margin-bottom:24px; line-height:1.2; }
+  .hero-subtitle { font-size:clamp(16px,1.5vw,18px); color:rgba(26,34,51,0.7); margin-bottom:40px; font-weight:400; line-height:1.7; }
+  .hero-btn { display:inline-block; background:#3A9688; color:white; text-decoration:none; padding:16px 40px; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; transition:background 0.2s; }
+  .hero-btn:hover { background:#2d7a6e; }
+  .hero-logo { display:flex; align-items:center; justify-content:center; }
+  .hero-logo img { width:100%; max-width:560px; height:auto; mix-blend-mode:multiply; }
+
+  /* GENERAL */
+  section { padding:100px 48px; }
+  .section-eyebrow { font-family:'DM Sans',sans-serif; font-size:14px; font-weight:600; letter-spacing:0.3em; text-transform:uppercase; color:#FFFFFF; background:#3A9688; padding:8px 16px; border-radius:4px; display:inline-block; margin-bottom:20px; }
+  .container { max-width:1100px; margin:0 auto; }
+
+  /* QUÉ ES */
+  #que-es { background:var(--marfil); }
+  .que-es-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; margin-top:48px; }
+  .que-es-title { font-size:clamp(36px,4vw,54px); font-weight:600; color:var(--navy-dark); grid-column:1/-1; }
+  .que-es-text { font-size:18px; color:var(--text-mid); line-height:1.8; }
+  .que-es-caja { border:3px solid #3A9688; padding:52px 48px; background:var(--white); min-width:320px; }
+  .que-es-caja-title { font-family:'Cormorant Garamond',serif; font-size:clamp(24px,2.5vw,36px); font-weight:700; color:#3A9688; margin-bottom:24px; font-style:italic; line-height:1.15; }
+  .que-es-caja p { font-size:17px; color:var(--text-mid); line-height:1.75; }
+
+  /* POR QUÉ */
+  #por-que { background:var(--navy-dark); color:white; }
+  #por-que .section-eyebrow { color:#FFFFFF; }
+  .por-que-title { font-size:clamp(34px,4vw,52px); font-weight:600; color:white; margin-top:16px; margin-bottom:24px; max-width:780px; }
+  .por-que-text { font-size:18px; color:rgba(255,255,255,0.65); max-width:700px; margin-bottom:60px; line-height:1.8; }
+  .pilares-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .pilar-card { background:var(--navy-card); border:1px solid rgba(42,157,143,0.3); border-top:3px solid var(--teal); padding:40px 32px; }
+  .pilar-card h3 { font-size:28px; font-weight:600; color:white; margin-bottom:20px; }
+  .pilar-card p { font-size:16px; color:rgba(255,255,255,0.6); line-height:1.75; }
+
+  /* ESTADÍSTICAS */
+  #estadisticas { background:var(--marfil); }
+  .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin-top:60px; border:1px solid var(--marfil-dark); }
+  .stat-item { padding:40px 24px; border-right:1px solid var(--marfil-dark); text-align:center; }
+  .stat-item:last-child { border-right:none; }
+  .stat-number { font-family:'Cormorant Garamond',serif; font-size:80px; font-weight:300; color:var(--teal); line-height:1; margin-bottom:16px; }
+  .stat-label { font-family:'DM Sans',sans-serif; font-size:0.9rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--text-mid); }
+
+  /* QUÉ HACEMOS */
+  #que-hacemos { background:var(--navy-mid); color:white; }
+  #que-hacemos .section-eyebrow { color:#FFFFFF; }
+  .que-hacemos-title { font-size:clamp(36px,4vw,54px); font-weight:600; color:white; margin-bottom:56px; margin-top:16px; }
+  .compromisos-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  .compromiso-card { background:rgba(255,255,255,0.04); border-left:4px solid var(--teal); padding:40px 36px; transition:background 0.2s; }
+  .compromiso-card:hover { background:rgba(255,255,255,0.07); }
+  .compromiso-card h3 { font-family:'DM Sans',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--teal); margin-bottom:20px; }
+  .compromiso-card p { font-size:17px; color:rgba(255,255,255,0.72); line-height:1.75; }
+
+  /* RED EN MOVIMIENTO */
+  #movimiento { background:var(--navy-dark); color:white; }
+  #movimiento .section-eyebrow { color:#FFFFFF; }
+  .movimiento-title { font-size:clamp(34px,4vw,52px); font-weight:600; color:white; margin-bottom:20px; margin-top:16px; }
+  .movimiento-text { font-size:18px; color:rgba(255,255,255,0.65); max-width:720px; margin-bottom:64px; line-height:1.8; }
+
+  .timeline { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; position:relative; }
+  .timeline::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:var(--teal); }
+
+  .timeline-item { padding-top:32px; position:relative; }
+  .timeline-dot { position:absolute; top:-7px; left:0; width:14px; height:14px; border-radius:50%; background:var(--teal); }
+
+  .timeline-card { background:var(--navy-card); border:1px solid rgba(42,157,143,0.25); overflow:hidden; }
+  .timeline-foto { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
+  .timeline-info { padding:28px 24px; }
+  .timeline-city { font-family:'Cormorant Garamond',serif; font-size:26px; font-weight:600; color:white; margin-bottom:6px; }
+  .timeline-date { font-size:13px; color:var(--teal); font-weight:600; margin-bottom:12px; letter-spacing:0.05em; }
+  .timeline-desc { font-size:15px; color:rgba(255,255,255,0.6); line-height:1.7; }
+
+  .movimiento-nota { font-style:italic; color:rgba(255,255,255,0.45); font-size:16px; text-align:center; border-top:1px solid rgba(255,255,255,0.1); padding-top:32px; margin-top:48px; }
+
+  /* VOCES */
+  #voces { background:var(--marfil); }
+  .voces-title { font-size:clamp(36px,4vw,54px); font-weight:600; color:var(--navy-dark); margin-bottom:16px; margin-top:16px; }
+  .voces-subtitle { font-size:18px; color:var(--text-mid); max-width:680px; margin-bottom:64px; line-height:1.8; }
+  .voces-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:32px; }
+  .voz-card { background:var(--white); border-top:3px solid var(--teal); padding:40px 32px; }
+  .speaker-date { font-size:0.78rem; color:#ffffff; background-color:#3A9688; padding:4px 14px; border-radius:20px; display:inline-block; margin-top:10px; margin-bottom:16px; text-align:center; }
+  .voz-foto { width:140px; height:140px; border-radius:50%; background:var(--teal-20); border:2px solid var(--teal); display:block; margin-bottom:20px; object-fit:cover; object-position:top center; overflow:hidden; }
+  .voz-nombre { font-family:'Cormorant Garamond',serif; font-size:26px; font-weight:600; color:#3A9688; margin-bottom:8px; }
+  .voz-desc { font-size:15px; color:var(--text-mid); line-height:1.7; }
+
+  /* ALIADOS */
+  #aliados { background-color:#FFFFFF; color:#3A9688; }
+  #aliados .section-eyebrow { color:#FFFFFF; }
+  .aliados-title { font-size:clamp(34px,4vw,52px); font-weight:600; color:#1a2233; margin-bottom:16px; margin-top:16px; }
+  .aliados-text { font-size:17px; color:rgba(26,34,51,0.65); margin-bottom:56px; max-width:680px; }
+  .aliados-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:16px; }
+  .aliados-grid-2 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; max-width:75%; }
+  .aliado-box { background:#FFFFFF; border:none; padding:0; display:flex; align-items:center; justify-content:center; height:160px; }
+  .aliado-box img { width:100%; height:100%; object-fit:contain; padding:16px; }
+
+  /* CONTACTO */
+  #contacto { background:var(--teal); text-align:center; padding:120px 48px; }
+  .contacto-eyebrow { font-family:'DM Sans',sans-serif; font-size:18px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.7); margin-bottom:24px; }
+  .contacto-title { font-family:'Cormorant Garamond',serif; font-size:clamp(42px,6vw,72px); font-weight:300; font-style:italic; color:white; margin-bottom:24px; }
+  .contacto-text { font-size:18px; color:rgba(255,255,255,0.82); max-width:560px; margin:0 auto 48px; line-height:1.75; }
+  .contacto-btn { display:inline-block; background:white; color:var(--teal-dark); text-decoration:none; padding:18px 48px; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; transition:all 0.2s; }
+  .contacto-btn:hover { background:var(--navy-dark); color:white; }
+
+  /* FOOTER */
+  footer { background:var(--navy-dark); padding:40px 48px; display:flex; align-items:center; justify-content:space-between; }
+  footer img { height:36px; opacity:0.7; }
+  footer p { font-size:13px; color:rgba(255,255,255,0.35); }
+
+  /* RESPONSIVE */
+  @media (max-width:900px) {
+    section { padding:72px 28px; }
+    nav { padding:0 24px; }
+    .nav-links { gap:20px; }
+    .nav-links a { font-size:11px; }
+    footer { padding:32px 24px; flex-direction:column; gap:16px; text-align:center; }
+    #hero { padding:100px 40px 60px; }
+    .hero-inner { grid-template-columns:1fr; gap:40px; text-align:center; }
+    .hero-text { align-items:center; }
+    .hero-logo { order:-1; }
+    .hero-logo img { max-width:300px; }
+    .que-es-grid { grid-template-columns:1fr; gap:40px; }
+    .pilares-grid { grid-template-columns:1fr; }
+    .stats-grid { grid-template-columns:1fr 1fr; }
+    .stat-item { border-bottom:1px solid var(--marfil-dark); }
+    .compromisos-grid { grid-template-columns:1fr; }
+    .timeline { grid-template-columns:1fr; }
+    .timeline::before { display:none; }
+    .voces-grid { grid-template-columns:1fr; }
+    .aliados-grid { grid-template-columns:1fr 1fr; }
+    .aliados-grid-2 { grid-template-columns:1fr 1fr; max-width:100%; }
+  }
+  @media (max-width:600px) {
+    nav { padding:0 16px; height:60px; }
+    .nav-links { gap:12px; }
+    .nav-links a:not(.nav-cta) { display:none; }
+    .nav-cta { padding:8px 16px; font-size:11px; }
+    #hero { padding:80px 24px 48px; }
+    .hero-inner { gap:32px; }
+    .hero-logo img { max-width:220px; }
+    .hero-title { font-size:30px; }
+    .hero-subtitle { font-size:16px; }
+    .hero-btn { padding:14px 28px; font-size:12px; }
+    .stats-grid { grid-template-columns:1fr; }
+    .aliados-grid { grid-template-columns:1fr 1fr; }
+    .aliados-grid-2 { grid-template-columns:1fr 1fr; max-width:100%; }
+  }
+
+  .articulo-wrap { max-width:720px; margin:0 auto; padding:140px 48px 80px; }
+  .articulo-volver { font-family:'DM Sans',sans-serif; font-size:13px; font-weight:600; color:#3A9688; text-decoration:none; letter-spacing:0.05em; display:inline-block; margin-bottom:48px; }
+  .articulo-volver:hover { color:#247B71; }
+  .articulo-autor { display:flex; align-items:center; gap:20px; margin-bottom:36px; }
+  .articulo-autor img { width:96px; height:96px; border-radius:50%; object-fit:cover; object-position:top; flex-shrink:0; }
+  .articulo-nombre { font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:600; color:#1A1A2E; }
+  .articulo-cargo { font-size:13px; color:#6b7280; line-height:1.5; margin-top:6px; }
+  .articulo-titulo { font-family:'Cormorant Garamond',serif; font-size:clamp(28px,4vw,42px); font-weight:600; color:#1A1A2E; line-height:1.2; margin-bottom:40px; }
+  .articulo-body p { font-size:17px; color:#3D4A5C; line-height:1.9; margin-bottom:20px; }
+
+  /* HAMBURGER MENU */
+  .nav-hamburger { display:none; background:none; border:none; color:#FFFFFF; font-size:24px; cursor:pointer; padding:4px 8px; z-index:101; }
+  .nav-mobile-menu { display:none; position:fixed; top:90px; left:0; right:0; background:#1A2340; z-index:99; flex-direction:column; padding:16px 0; }
+  .nav-mobile-menu a { font-family:'DM Sans',sans-serif; font-size:13px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#FFFFFF; text-decoration:none; padding:14px 32px; display:block; border-bottom:1px solid rgba(255,255,255,0.07); }
+  .nav-mobile-menu a:last-child { border-bottom:none; }
+  .nav-mobile-menu a:hover { background:rgba(255,255,255,0.05); }
+  .nav-mobile-menu.open { display:flex; }
+  @media (max-width:768px) {
+    .nav-links { display:none !important; }
+    .nav-hamburger { display:block; }
+  }
+  nav a:visited { color: #FFFFFF !important; }
+  .nav-links a:visited { color: #FFFFFF !important; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#hero" class="nav-logo"><img src="logos/logoblanco.png" alt="RFE"></a>
+  <div class="nav-links">
+    <a href="RFE_LATAM.html#que-es">¿Qué es RFE?</a>
+    <a href="RFE_LATAM.html#por-que">¿Por qué existe?</a>
+    <a href="RFE_LATAM.html#que-hacemos">¿Qué hacemos?</a>
+    <a href="RFE_LATAM.html#movimiento">Encuentros</a>
+    <a href="RFE_LATAM.html#voces">Referentes</a>
+    <a href="RFE_LATAM.html#aliados">Aliados</a>
+    <a href="RFE_LATAM.html#articulos">Artículos</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <span style="font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;color:#FFFFFF;">ES</span>
+    <span style="color:rgba(255,255,255,0.4);">|</span>
+    <span onclick="window.location.href=\'RFE_LATAM_PT.html\'" style="font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;color:rgba(255,255,255,0.5) !important;text-decoration:none !important;cursor:pointer;">PT</span>
+    <a href="https://forms.gle/CJeCb49vpHMRWnUD9" target="_blank" class="nav-cta">Forma Parte</a>
+  </div>
+  <button id="hamburger-btn" class="nav-hamburger" onclick="toggleMenu()">☰</button>
+</nav>
+<div id="mobile-menu" class="nav-mobile-menu">
+    <a href="RFE_LATAM.html#que-es" onclick="closeMenu()">¿Qué es RFE?</a>
+    <a href="RFE_LATAM.html#por-que" onclick="closeMenu()">¿Por qué existe?</a>
+    <a href="RFE_LATAM.html#que-hacemos" onclick="closeMenu()">¿Qué hacemos?</a>
+    <a href="RFE_LATAM.html#movimiento" onclick="closeMenu()">Encuentros</a>
+    <a href="RFE_LATAM.html#voces" onclick="closeMenu()">Referentes</a>
+    <a href="RFE_LATAM.html#articulos" onclick="closeMenu()">Artículos</a>
+    <a href="RFE_LATAM.html#aliados" onclick="closeMenu()">Aliados</a>
+</div>
+
+<div class="articulo-wrap">
+  <a href="RFE_LATAM.html#articulos" class="articulo-volver">← Volver a Artículos</a>
+  <div class="articulo-autor">
+    <img src="Marcos_Juejati.jpg" alt="Marcos Juejati">
+    <div>
+      <div class="articulo-nombre">Marcos Juejati</div>
+      <div class="articulo-cargo">Presidente de Lamroth Hakol, Vicente López, Argentina; presidente de la red NETA Latam; miembro del RFE Latam; miembro de Camondo Argentina</div>
+    </div>
+  </div>
+  <h1 class="articulo-titulo">Hacer red, o cómo catalizar el judaísmo en los tiempos que corren</h1>
+  <div class="articulo-body">
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Creo fervientemente en las redes como el mecanismo de relacionarnos, de estar juntos y de unirnos. Durante siglos, nuestras comunidades se organizaron como fortalezas: cada institución, un edificio sólido, con límites claros, con identidad propia, con un adentro y un afuera bien definidos. Ese modelo nos permitió sostenernos, preservar nuestras tradiciones, transmitir el valor del estudio, de la comunidad, de la responsabilidad compartida.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Pero el mundo cambió.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Y ese cambio se aceleró, para nosotros, los judíos, el 7 de octubre de 2023.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Hoy vivimos en un contexto atravesado por tensiones permanentes. La radicalización de posiciones, la simplificación de debates complejos, la fragmentación social y, muchas veces, el resurgimiento de expresiones de antisemitismo —explícitas o más sutiles— configuran un escenario desafiante para la vida judía en todo el mundo. A esto se suma una dinámica cultural que muchas veces prioriza lo inmediato sobre lo trascendente, lo individual sobre lo colectivo, lo emocional sobre lo reflexivo.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">En ese contexto, los valores que históricamente sostuvieron al pueblo judío —la búsqueda del conocimiento, el respeto por la diversidad de opiniones, la construcción comunitaria, la responsabilidad intergeneracional— no pierden vigencia. Pero sí necesitan nuevas formas de expresión, nuevas herramientas, nuevas estructuras que los hagan vivos y relevantes en este tiempo.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Necesitamos estar permanentemente conectados, necesitamos sentir que no estamos solos, no importa cómo cada uno exprese su judaísmo o lo quiera vivenciar. Y pretender que las respuestas del pasado, por exitosas que hayan sido, alcancen para abordar los desafíos del presente no solo es ineficaz: es, en algún punto, desconectarnos de la realidad.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">La experiencia de construcción de NETA —nuestra red de comunidades del movimiento judío masortí en América Latina— parte de ese diagnóstico. No se trata de reemplazar a las instituciones, sino de redefinir cómo se vinculan entre sí, cómo comparten conocimiento, cómo potencian sus capacidades y, sobre todo, cómo vuelven a conectar con las personas.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Porque el modelo organizacional del presente, y más aún del futuro, no es la estructura cerrada: es la red.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">¿Por qué las redes? Porque amplifican capacidades. Porque permiten que una idea que surge en una comunidad encuentre eco y desarrollo en otra. Porque hacen circular recursos, experiencias y aprendizajes en tiempo real. Porque convierten desafíos individuales en agendas compartidas.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Y, en un mundo atravesado por la polarización, las redes también encarnan algo profundamente judío: la posibilidad de sostener la complejidad. De construir sin anular la diferencia. De debatir sin romper el vínculo. De entender que no hay una única forma de vivir la identidad, pero sí una responsabilidad común en sostenerla.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Estar unidos nos permite hacer cosas que las instituciones y las personas individualmente no podrían hacer.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Popularizado por los pensadores Gilles Deleuze y Félix Guattari, la noción de rizoma describe en las ciencias sociales un modelo de conocimiento y organización que se aplica para explicar sistemas (como el cerebro, internet o el aprendizaje) donde no hay un principio ni un fin, sino conexiones múltiples, libres y horizontales, sin jerarquías. A diferencia de un árbol tradicional (que tiene una raíz principal y ramas jerárquicas), el rizoma representa una red descentralizada donde cualquier punto puede conectarse con otro.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Tanto NETA como la Red Filantrópica Estratégica (RFE), desarrollada a semejanza de la Jewish Founders Network (JFN), operan bajo el paradigma de rizomas. La RFE forma parte de una lógica más amplia que ya está emergiendo en distintos espacios de la vida judía: redes de emprendedores y empresarios, como Camondo, y articulaciones comunitarias entre instituciones con historia. Todas responden, en esencia, a una misma intuición: que el valor ya no está en lo que cada uno hace por separado, sino en lo que somos capaces de construir juntos, aportando cada uno lo que tiene y sabe y obteniendo de la red lo que necesita. Seguramente seguiremos haciendo redes de redes, porque cada uno tiene más de una capacidad y puede integrar múltiples uniones simultáneas.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Esto también nos obliga a revisar algo más profundo: la relación entre las instituciones y la gente.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Durante mucho tiempo dimos por sentado que las personas iban a adaptarse a los formatos existentes. Hoy vemos con claridad que eso ya no sucede. No porque falte compromiso con la identidad o con la comunidad, sino porque hay una brecha creciente entre las propuestas institucionales y las expectativas de las nuevas generaciones.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Cuando los recursos no llegan donde deben llegar, cuando las propuestas no interpelan, cuando la participación se vuelve episódica, el problema no está afuera. Está en nuestra capacidad —o incapacidad— de repensarnos.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Las nuevas generaciones no están menos comprometidas. Están comprometidas de otra manera. Buscan espacios más horizontales, más abiertos, más conectados con el mundo. Quieren ser parte, no solo destinatarias. Quieren construir, no solo recibir.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Quieren ser protagonistas, y no estar siempre a la expectativa. Las redes, en este sentido, no son solo una herramienta operativa. Son también una forma distinta de entender el liderazgo.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Un liderazgo que no se mide por la centralidad, sino por la capacidad de articular sistemas de relaciones horizontales abiertas y no jerárquicas. Que no se define por acumular, sino por conectar. Que no busca imponer una única mirada, sino habilitar múltiples voces dentro de un marco de valores compartidos. Esto es: una plataforma para obtener las metas y objetivos que cada uno se propone.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Esto implica asumir algo incómodo pero necesario: que ninguna institución, por más historia o relevancia que tenga, puede resolver sola los desafíos que tenemos por delante. También aceptar que la continuidad de la vida judía no depende exclusivamente de lo que hagamos quienes hoy ocupamos roles de conducción. Depende, en gran medida, de nuestra capacidad de abrir espacio, dejar lugar, despejar el camino, de permitir que quienes vienen detrás puedan diseñar el mundo judío que quieren habitar.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Hay algo de coraje en esto. Y sobre todo de humildad.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Coraje para cuestionar estructuras que durante décadas funcionaron de una determinada manera. Humildad para reconocer que el legado más importante que podemos dejar no es un modelo cerrado, sino una plataforma abierta.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Estas redes son, en ese sentido, una apuesta. No una respuesta definitiva, sino un proceso en construcción. Un espacio donde las comunidades dejan de ser islas y pasan a ser nodos de una red viva, dinámica, en permanente evolución, un rizoma.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">En tiempos de fragmentación, construir red es, también, una forma de construir sentido. En tiempos de polarización, es una forma de sostener la conversación. En tiempos de incertidumbre, es una forma de cuidar el futuro.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Tal vez el mayor desafío de esta etapa no sea sostener lo que tenemos, sino animarnos a conectarlo de otra manera.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Para ello es clave abrazar una noción esencial: la red no interfiere con las identidades individuales del judaísmo, con las experiencias, prácticas y valores subjetivos de cada comunidad, sino que las potencia. Tenemos que apoyarnos en el 80 por ciento de nuestras coincidencias y dejar de lado el 20 por ciento de nuestras diferencias. La red nos permite eso: encontrarnos siendo lo que somos.</p>
+        <p style="font-size:17px;color:#3D4A5C;line-height:1.9;margin-bottom:20px;">Porque en un mundo de redes, la verdadera fortaleza —también para la vida judía— ya no está en los muros que levantamos, sino en los puentes que somos capaces de construir.</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 RFE LATAM — Red Judía de Filantropía Estratégica</p>
+</footer>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById('mobile-menu');
+  var btn = document.getElementById('hamburger-btn');
+  menu.classList.toggle('open');
+  btn.textContent = menu.classList.contains('open') ? '✕' : '☰';
+}
+function closeMenu() {
+  var menu = document.getElementById('mobile-menu');
+  var btn = document.getElementById('hamburger-btn');
+  menu.classList.remove('open');
+  btn.textContent = '☰';
+}
+</script>
+</body>
+</html>

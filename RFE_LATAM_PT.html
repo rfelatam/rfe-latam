@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta property="og:title" content="RFE — Rede Judaica de Filantropia Estratégica na América Latina" />
+<meta property="og:description" content="Uma comunidade de líderes que transforma a generosidade em ação estratégica: conectada, reflexiva e comprometida com o impacto de longo prazo." />
+<meta property="og:image" content="https://rfe-latam.netlify.app/logos/logoblanco.png" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://rfe-latam.netlify.app/RFE_LATAM_PT.html" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RFE LATAM — Rede Judaica de Filantropia Estratégica</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal: #2A9D8F;
+    --teal-dark: #247B71;
+    --teal-bright: #34B2A3;
+    --teal-20: #D8EFED;
+    --navy-dark: #1A1A2E;
+    --navy-mid: #1E2E3E;
+    --navy-card: #1A2840;
+    --marfil: #F8F7F4;
+    --marfil-dark: #EDEAE4;
+    --white: #FFFFFF;
+    --text-dark: #1A1A2E;
+    --text-mid: #3D4A5C;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'DM Sans',sans-serif; background:var(--marfil); color:var(--text-dark); font-size:18px; line-height:1.7; }
+  h1,h2,h3,h4 { font-family:'Cormorant Garamond',serif; line-height:1.2; }
+
+  /* NAV */
+  nav { border:none; position:fixed; top:0; left:0; right:0; z-index:100; background:#1a2233; padding:0 48px; height:90px; display:flex; align-items:center; justify-content:space-between; overflow:visible; }
+  .nav-logo { display:flex; align-items:center; background:none; }
+  .nav-logo img { height:78px; width:auto; display:block; }
+  .nav-links { display:flex; align-items:center; gap:14px; position:absolute; left:50%; transform:translateX(-50%); white-space:nowrap; }
+  .nav-links a { font-family:'DM Sans',sans-serif; font-size:0.65rem; font-weight:500; letter-spacing:0.02em; text-transform:uppercase; color:#FFFFFF !important; text-decoration:none; transition:color 0.2s; white-space:nowrap; }
+  .nav-links a:hover { color:var(--teal); }
+  .nav-cta { background:var(--teal); color:white !important; text-decoration:none; padding:10px 24px; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; transition:background 0.2s; }
+  .nav-cta:hover { background:var(--teal-dark) !important; }
+
+  /* HERO */
+  #hero { min-height:100vh; background:#e8f0f5; display:flex; align-items:center; padding:120px 48px 80px; }
+  .hero-inner { max-width:1100px; margin:0 auto; width:100%; display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
+  .hero-text { display:flex; flex-direction:column; align-items:flex-start; }
+  .hero-title { font-size:clamp(32px,4vw,52px); font-weight:700; color:#1a2233; margin-bottom:24px; line-height:1.2; }
+  .hero-subtitle { font-size:clamp(16px,1.5vw,18px); color:rgba(26,34,51,0.7); margin-bottom:40px; font-weight:400; line-height:1.7; }
+  .hero-btn { display:inline-block; background:#3A9688; color:white; text-decoration:none; padding:8px 16px; font-family:'DM Sans',sans-serif; font-size:14px; font-weight:600; letter-spacing:0.3em; text-transform:uppercase; border-radius:4px; transition:background 0.2s; align-self:flex-start; }
+  .hero-btn:hover { background:#2d7a6e; }
+  .hero-logo { display:flex; align-items:center; justify-content:center; }
+  .hero-logo img { width:100%; max-width:560px; height:auto; mix-blend-mode:multiply; }
+
+  /* GENERAL */
+  section { padding:100px 48px; }
+  .section-eyebrow { font-family:'DM Sans',sans-serif; font-size:14px; font-weight:600; letter-spacing:0.3em; text-transform:uppercase; color:#FFFFFF; background:#3A9688; padding:8px 16px; border-radius:4px; display:inline-block; margin-bottom:20px; }
+  .container { max-width:1100px; margin:0 auto; }
+
+  /* QUÉ ES */
+  #que-es { background:var(--marfil); }
+  .que-es-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; margin-top:48px; }
+  .que-es-title { font-size:clamp(36px,4vw,54px); font-weight:600; color:var(--navy-dark); grid-column:1/-1; }
+  .que-es-text { font-size:18px; color:var(--text-mid); line-height:1.8; }
+  .que-es-caja { border:3px solid #3A9688; padding:52px 48px; background:var(--white); min-width:320px; }
+  .que-es-caja-title { font-family:'Cormorant Garamond',serif; font-size:clamp(24px,2.5vw,36px); font-weight:700; color:#3A9688; margin-bottom:24px; font-style:italic; line-height:1.15; }
+  .que-es-caja p { font-size:17px; color:var(--text-mid); line-height:1.75; }
+
+  /* POR QUÉ */
+  #por-que { background:var(--navy-dark); color:white; }
+  #por-que .section-eyebrow { color:#FFFFFF; }
+  .por-que-title { font-size:clamp(34px,4vw,52px); font-weight:600; color:white; margin-top:16px; margin-bottom:24px; max-width:780px; }
+  .por-que-text { font-size:18px; color:rgba(255,255,255,0.65); max-width:700px; margin-bottom:60px; line-height:1.8; }
+  .pilares-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .pilar-card { background:var(--navy-card); border:1px solid rgba(42,157,143,0.3); border-top:3px solid var(--teal); padding:40px 32px; }
+  .pilar-card h3 { font-size:28px; font-weight:600; color:white; margin-bottom:20px; }
+  .pilar-card p { font-size:16px; color:rgba(255,255,255,0.6); line-height:1.75; }
+
+  /* ESTADÍSTICAS */
+  #estadisticas { background:var(--marfil); }
+  .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin-top:60px; border:1px solid var(--marfil-dark); }
+  .stat-item { padding:40px 24px; border-right:1px solid var(--marfil-dark); text-align:center; }
+  .stat-item:last-child { border-right:none; }
+  .stat-number { font-family:'Cormorant Garamond',serif; font-size:80px; font-weight:300; color:var(--teal); line-height:1; margin-bottom:16px; }
+  .stat-label { font-family:'DM Sans',sans-serif; font-size:0.9rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--text-mid); }
+
+  /* QUÉ HACEMOS */
+  #que-hacemos { background:var(--navy-mid); color:white; }
+  #que-hacemos .section-eyebrow { color:#FFFFFF; }
+  .que-hacemos-title { font-size:clamp(36px,4vw,54px); font-weight:600; color:white; margin-bottom:56px; margin-top:16px; }
+  .compromisos-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  .compromiso-card { background:rgba(255,255,255,0.04); border-left:4px solid var(--teal); padding:40px 36px; transition:background 0.2s; }
+  .compromiso-card:hover { background:rgba(255,255,255,0.07); }
+  .compromiso-card h3 { font-family:'DM Sans',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--teal); margin-bottom:20px; }
+  .compromiso-card p { font-size:17px; color:rgba(255,255,255,0.72); line-height:1.75; }
+
+  /* RED EN MOVIMIENTO */
+  #movimiento { background:var(--navy-dark); color:white; }
+  #movimiento .section-eyebrow { color:#FFFFFF; }
+  .movimiento-title { font-size:clamp(34px,4vw,52px); font-weight:600; color:white; margin-bottom:20px; margin-top:16px; }
+  .movimiento-text { font-size:18px; color:rgba(255,255,255,0.65); max-width:720px; margin-bottom:64px; line-height:1.8; }
+
+  .timeline { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; position:relative; }
+  .timeline::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:var(--teal); }
+
+  .timeline-item { padding-top:32px; position:relative; }
+  .timeline-dot { position:absolute; top:-7px; left:0; width:14px; height:14px; border-radius:50%; background:var(--teal); }
+
+  .timeline-card { background:var(--navy-card); border:1px solid rgba(42,157,143,0.25); overflow:hidden; }
+  .timeline-foto { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
+  .timeline-info { padding:28px 24px; }
+  .timeline-city { font-family:'Cormorant Garamond',serif; font-size:26px; font-weight:600; color:white; margin-bottom:6px; }
+  .timeline-date { font-size:13px; color:var(--teal); font-weight:600; margin-bottom:12px; letter-spacing:0.05em; }
+  .timeline-desc { font-size:15px; color:rgba(255,255,255,0.6); line-height:1.7; }
+
+  .movimiento-nota { font-style:italic; color:rgba(255,255,255,0.45); font-size:16px; text-align:center; border-top:1px solid rgba(255,255,255,0.1); padding-top:32px; margin-top:48px; }
+
+  /* VOCES */
+  #voces { background:var(--marfil); }
+  .voces-title { font-size:clamp(36px,4vw,54px); font-weight:600; color:var(--navy-dark); margin-bottom:16px; margin-top:16px; }
+  .voces-subtitle { font-size:18px; color:var(--text-mid); max-width:680px; margin-bottom:64px; line-height:1.8; }
+  .voces-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:32px; }
+  .voz-card { background:var(--white); border-top:3px solid var(--teal); padding:40px 32px; }
+  .speaker-date { font-size:0.78rem; color:#ffffff; background-color:#3A9688; padding:4px 14px; border-radius:20px; display:inline-block; margin-top:10px; margin-bottom:16px; text-align:center; }
+  .voz-foto { width:140px; height:140px; border-radius:50%; background:var(--teal-20); border:2px solid var(--teal); display:block; margin-bottom:20px; object-fit:cover; object-position:top center; overflow:hidden; }
+  .voz-nombre { font-family:'Cormorant Garamond',serif; font-size:26px; font-weight:600; color:#3A9688; margin-bottom:8px; }
+  .voz-desc { font-size:15px; color:var(--text-mid); line-height:1.7; }
+
+  /* ALIADOS */
+  #aliados { background-color:#FFFFFF; color:#3A9688; }
+  #aliados .section-eyebrow { color:#FFFFFF; }
+  .aliados-title { font-size:clamp(34px,4vw,52px); font-weight:600; color:#1a2233; margin-bottom:16px; margin-top:16px; }
+  .aliados-text { font-size:17px; color:rgba(26,34,51,0.65); margin-bottom:56px; max-width:680px; }
+  .aliados-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:16px; }
+  .aliados-grid-2 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; max-width:75%; }
+  .aliado-box { background:#FFFFFF; border:none; padding:0; display:flex; align-items:center; justify-content:center; height:160px; }
+  .aliado-box img { width:100%; height:100%; object-fit:contain; padding:16px; }
+
+  /* CONTACTO */
+  #contacto { background:var(--teal); text-align:center; padding:120px 48px; }
+  .contacto-eyebrow { font-family:'DM Sans',sans-serif; font-size:18px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.7); margin-bottom:24px; }
+  .contacto-title { font-family:'Cormorant Garamond',serif; font-size:clamp(42px,6vw,72px); font-weight:300; font-style:italic; color:white; margin-bottom:24px; }
+  .contacto-text { font-size:18px; color:rgba(255,255,255,0.82); max-width:560px; margin:0 auto 48px; line-height:1.75; }
+  .contacto-btn { display:inline-block; background:white; color:var(--teal-dark); text-decoration:none; padding:18px 48px; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; transition:all 0.2s; }
+  .contacto-btn:hover { background:var(--navy-dark); color:white; }
+
+  /* FOOTER */
+  footer { background:var(--navy-dark); padding:40px 48px; display:flex; align-items:center; justify-content:space-between; }
+  footer img { height:36px; opacity:0.7; }
+  footer p { font-size:13px; color:rgba(255,255,255,0.35); }
+
+  /* RESPONSIVE */
+  @media (max-width:900px) {
+    section { padding:72px 28px; }
+    nav { padding:0 24px; }
+    /* nav-links handled by hamburger at 768px */
+    footer { padding:32px 24px; flex-direction:column; gap:16px; text-align:center; }
+    #hero { padding:100px 40px 60px; }
+    .hero-inner { grid-template-columns:1fr; gap:40px; text-align:center; }
+    .hero-text { align-items:flex-start; }
+    .hero-logo { order:-1; }
+    .hero-logo img { max-width:300px; }
+    .que-es-grid { grid-template-columns:1fr; gap:40px; }
+    .pilares-grid { grid-template-columns:1fr; }
+    .stats-grid { grid-template-columns:1fr 1fr; }
+    .stat-item { border-bottom:1px solid var(--marfil-dark); }
+    .compromisos-grid { grid-template-columns:1fr; }
+    .timeline { grid-template-columns:1fr; }
+    .timeline::before { display:none; }
+    .voces-grid { grid-template-columns:1fr; }
+    .aliados-grid { grid-template-columns:1fr 1fr; }
+    .aliados-grid-2 { grid-template-columns:1fr 1fr; max-width:100%; }
+  }
+  @media (max-width:600px) {
+    nav { padding:0 16px; height:60px; }
+    .nav-links { gap:12px; }
+    .nav-links a:not(.nav-cta) { display:none; }
+    .nav-cta { padding:8px 16px; font-size:11px; }
+    #hero { padding:80px 24px 48px; }
+    .hero-inner { gap:32px; }
+    .hero-logo img { max-width:220px; }
+    .hero-title { font-size:30px; }
+    .hero-subtitle { font-size:16px; }
+    .stats-grid { grid-template-columns:1fr; }
+    .aliados-grid { grid-template-columns:1fr 1fr; }
+    .aliados-grid-2 { grid-template-columns:1fr 1fr; max-width:100%; }
+  }
+
+  /* HAMBURGER MENU */
+  .nav-hamburger { display:none; background:none; border:none; color:#FFFFFF; font-size:24px; cursor:pointer; padding:4px 8px; z-index:101; }
+  .nav-mobile-menu { display:none; position:fixed; top:90px; left:0; right:0; background:#1A2340; z-index:99; flex-direction:column; padding:16px 0; }
+  .nav-mobile-menu a { font-family:'DM Sans',sans-serif; font-size:13px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#FFFFFF; text-decoration:none; padding:14px 32px; display:block; border-bottom:1px solid rgba(255,255,255,0.07); }
+  .nav-mobile-menu a:last-child { border-bottom:none; }
+  .nav-mobile-menu a:hover { background:rgba(255,255,255,0.05); }
+  .nav-mobile-menu.open { display:flex; }
+  @media (max-width:768px) {
+    .nav-links { display:none !important; }
+    .nav-hamburger { display:block; }
+  }
+
+  @media (max-width:768px) { .hero-logo { display:none !important; } }
+
+  @media (max-width:768px) { #hero { padding-top:110px; padding-bottom:40px; align-items:flex-start; min-height:auto; } }
+
+  @media (max-width:768px) { .nav-logo img { height:54px; } }
+
+  nav a:visited { color: #FFFFFF !important; }
+  .nav-links a:visited { color: #FFFFFF !important; }
+
+  nav a[href="RFE_LATAM.html"] { color: rgba(255,255,255,0.5) !important; text-decoration: none !important; }
+  nav a[href="RFE_LATAM.html"]:visited { color: rgba(255,255,255,0.5) !important; }
+
+  nav a, nav a:link, nav a:visited, nav a:hover, nav a:active { color: rgba(255,255,255,0.5) !important; text-decoration: none !important; }
+  .nav-lang-active { color: #FFFFFF !important; }
+  .nav-links a, .nav-links a:link, .nav-links a:visited, .nav-links a:hover, .nav-links a:active { color: #FFFFFF !important; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#hero" class="nav-logo"><img src="logos/logoblanco.png" alt="RFE"></a>
+  <div class="nav-links">
+    <a href="#que-es">O que é a RFE?</a>
+    <a href="#por-que">Por que existe?</a>
+    <a href="#que-hacemos">O que fazemos?</a>
+    <a href="#movimiento">Encontros</a>
+    <a href="#voces">Especialistas</a>
+    <a href="#aliados">Aliados</a>
+    <a href="#artigos">Artigos</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <a href="RFE_LATAM.html" style="font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;color:rgba(255,255,255,0.5) !important;text-decoration:none !important;cursor:pointer;">ES</a>
+    <span style="color:rgba(255,255,255,0.4);">|</span>
+    <span class="nav-lang-active" style="font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;">PT</span>
+    <a href="https://forms.gle/CJeCb49vpHMRWnUD9" target="_blank" class="nav-cta">Faça Parte</a>
+  </div>
+  <button id="hamburger-btn" class="nav-hamburger" onclick="toggleMenu()">☰</button>
+</nav>
+<div id="mobile-menu" class="nav-mobile-menu">
+    <a href="javascript:void(0)" onclick="document.getElementById('mobile-menu').style.display='none';document.getElementById('hamburger-btn').textContent='☰';setTimeout(function(){window.location.href='RFE_LATAM_PT.html#que-es';},100);">O que é a RFE?</a>
+    <a href="javascript:void(0)" onclick="document.getElementById('mobile-menu').style.display='none';document.getElementById('hamburger-btn').textContent='☰';setTimeout(function(){window.location.href='RFE_LATAM_PT.html#por-que';},100);">Por que existe?</a>
+    <a href="javascript:void(0)" onclick="document.getElementById('mobile-menu').style.display='none';document.getElementById('hamburger-btn').textContent='☰';setTimeout(function(){window.location.href='RFE_LATAM_PT.html#que-hacemos';},100);">O que fazemos?</a>
+    <a href="javascript:void(0)" onclick="document.getElementById('mobile-menu').style.display='none';document.getElementById('hamburger-btn').textContent='☰';setTimeout(function(){window.location.href='RFE_LATAM_PT.html#movimiento';},100);">Encontros</a>
+    <a href="javascript:void(0)" onclick="document.getElementById('mobile-menu').style.display='none';document.getElementById('hamburger-btn').textContent='☰';setTimeout(function(){window.location.href='RFE_LATAM_PT.html#voces';},100);">Especialistas</a>
+    <a href="javascript:void(0)" onclick="document.getElementById('mobile-menu').style.display='none';document.getElementById('hamburger-btn').textContent='☰';setTimeout(function(){window.location.href='RFE_LATAM_PT.html#artigos';},100);">Artigos</a>
+    <a href="javascript:void(0)" onclick="document.getElementById('mobile-menu').style.display='none';document.getElementById('hamburger-btn').textContent='☰';setTimeout(function(){window.location.href='RFE_LATAM_PT.html#aliados';},100);">Aliados</a>
+</div>
+
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1 class="hero-title">Rede Judaica de Filantropia Estratégica na América Latina</h1>
+      <p class="hero-subtitle">Uma comunidade de líderes que transforma a generosidade em ação estratégica: conectada, reflexiva e comprometida com o impacto de longo prazo.</p>
+    </div>
+    <div class="hero-logo">
+      <img src="logos/Logo Red Judía de Filantropía Estratégica.png" alt="RFE Logo">
+    </div>
+  </div>
+
+</section>
+<section id="que-es">
+  <div class="container">
+    <p class="section-eyebrow">O que é a RFE?</p>
+    <div class="que-es-grid">
+      <div class="que-es-text">
+        <p>A RFE conecta líderes de diferentes países para compartilhar experiências, aprofundar seus marcos de ação e construir juntos uma filantropia mais intencional, mais estratégica e mais transformadora.</p>
+        <br>
+      </div>
+      <div class="que-es-caja">
+        <h3 class="que-es-caja-title">A RFE não é um espaço de captação de recursos.</h3>
+        <p>É um espaço entre pares: de escuta genuína, pensamento crítico e colaboração real. Um lugar onde quem já doa quer doar melhor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="por-que">
+  <div class="container">
+    <p class="section-eyebrow">Por que existe a RFE?</p>
+    <h2 class="por-que-title">O potencial da filantropia judaica latino-americana é enorme — e ainda não foi plenamente desenvolvido.</h2>
+    <p class="por-que-text">Com frequência opera de forma fragmentada, reativa e sem os mecanismos de aprendizado coletivo que multiplicariam seu alcance.</p>
+    <div class="pilares-grid">
+      <div class="pilar-card"><h3>Intenção</h3><p>Não se trata apenas de quanto se doa, mas de como, com quem e com qual visão. A filantropia estratégica começa com a pergunta certa.</p></div>
+      <div class="pilar-card"><h3>Comunidade</h3><p>Quando filantropos se conhecem e pensam juntos, o impacto se multiplica. A rede não é um benefício adicional — é a condição do impacto.</p></div>
+      <div class="pilar-card"><h3>Longo prazo</h3><p>Construir uma cultura filantrópica madura exige tempo, rede e continuidade. A RFE é esse compromisso.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="estadisticas">
+  <div class="container">
+    <p class="section-eyebrow">RFE em números</p>
+    <div class="stats-grid">
+      <div class="stat-item"><div class="stat-number">3</div><div class="stat-label">Encontros presenciais em 2 anos</div></div>
+      <div class="stat-item"><div class="stat-number">+7</div><div class="stat-label">Países representados na rede</div></div>
+      <div class="stat-item"><div class="stat-number">1</div><div class="stat-label">Propósito: doar melhor, juntos</div></div>
+      <div class="stat-item"><div class="stat-number">∞</div><div class="stat-label">Potencial quando se age em comunidade</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="que-hacemos">
+  <div class="container">
+    <p class="section-eyebrow">O que fazemos?</p>
+    <h2 class="que-hacemos-title">Quatro compromissos que definem a RFE.</h2>
+    <div class="compromisos-grid">
+      <div class="compromiso-card"><h3>Conectamos</h3><p>Líderes filantrópicos de toda a América Latina, tecendo uma rede regional de confiança e propósito compartilhado.</p></div>
+      <div class="compromiso-card"><h3>Geramos</h3><p>Espaços de encontro, diálogo e reflexão onde as perguntas difíceis são feitas em voz alta.</p></div>
+      <div class="compromiso-card"><h3>Compartilhamos</h3><p>Aprendizados, modelos, fracassos e boas práticas entre pares que entendem que a inteligência coletiva supera a individual.</p></div>
+      <div class="compromiso-card"><h3>Impulsionamos</h3><p>Colaborações concretas: projetos conjuntos, sinergias estratégicas e uma visão comum do impacto duradouro.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="movimiento">
+  <div class="container">
+    <p class="section-eyebrow">Uma rede em movimento</p>
+    <h2 class="movimiento-title">Três encontros. Uma comunidade em crescimento.</h2>
+    <p class="movimiento-text">Desde sua fundação, a RFE reuniu filantropos judeus de toda a América Latina em encontros projetados para ir além do networking: espaços de debate profundo e compromissos reais.</p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <img class="timeline-foto" src="Nashville RFE.jpg" alt="Nashville RFE">
+          <div class="timeline-info">
+            <div class="timeline-city">Nashville</div>
+            <div class="timeline-date">Março 2025</div>
+            <div class="timeline-desc">Primeiro encontro regional. A faísca inicial de uma rede viva.</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <img class="timeline-foto" src="miami-rfe.jpg" alt="Miami RFE">
+          <div class="timeline-info">
+            <div class="timeline-city">Miami</div>
+            <div class="timeline-date">Novembro 2025</div>
+            <div class="timeline-desc">Segunda edição. Aprofundamento de vínculos e agenda coletiva.</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <img class="timeline-foto" src="San Diego RFE.JPG" alt="San Diego RFE">
+          <div class="timeline-info">
+            <div class="timeline-city">San Diego</div>
+            <div class="timeline-date">Março 2026</div>
+            <div class="timeline-desc">Terceiro encontro. Rede consolidada, em expansão.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="movimiento-nota">A RFE não para de crescer — seu próximo capítulo está sendo escrito por quem hoje decide fazer parte.</p>
+  </div>
+</section>
+
+<section id="voces">
+  <div class="container">
+    <p class="section-eyebrow">Especialistas</p>
+    <h2 class="voces-title">Líderes que compartilham o que sabem.</h2>
+    <p class="voces-subtitle">Especialistas em filantropia estratégica, tecnologia e inovação compartilham conhecimentos e experiências que fortalecem o pensamento em rede.</p>
+    <div class="voces-grid">
+      <div class="voz-card">
+        <img class="voz-foto" src="Jeffrey Solomon.jpeg" alt="Jeff Solomon" style="object-fit:cover; object-position:top center; width:140px; height:140px;">
+        <span class="speaker-date">25 de março de 2025</span>
+        <div class="voz-nombre">Jeff Solomon</div>
+        <p class="voz-desc">Ex-Presidente das Andrea and Charles Bronfman Philanthropies e referência na filantropia judaica internacional. Impulsionou o Birthright Israel e assessorou alguns dos doadores mais influentes do mundo judaico.</p>
+      </div>
+      <div class="voz-card">
+        <img class="voz-foto" src="Barry Finestone.jpeg" alt="Barry Finestone" style="object-fit:cover; object-position:top center; width:140px; height:140px;">
+        <span class="speaker-date">17 de março de 2025</span>
+        <div class="voz-nombre">Barry Finestone</div>
+        <p class="voz-desc">Presidente e CEO da Jim Joseph Foundation. Uma das vozes mais influentes em filantropia estratégica nos Estados Unidos, com foco em educação judaica e impacto de longo prazo.</p>
+      </div>
+      <div class="voz-card">
+        <img class="voz-foto" src="AlejandroZuzenberg.jpg" alt="Alejandro Zuzenberg" style="object-fit:cover; object-position:top center; width:140px; height:140px;">
+        <span class="speaker-date">26 de maio de 2026</span>
+        <div class="voz-nombre">Alejandro Zuzenberg</div>
+        <p class="voz-desc">CEO e cofundador da Botmaker. Ex-diretor do Facebook e do Google para a América Hispânica. Referência em tecnologia e inovação aplicadas ao setor social e filantrópico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="artigos" style="background:#E8EEF4; padding:80px 48px;">
+  <div class="container">
+    <p class="section-eyebrow">Artigos</p>
+    <div style="border:1px solid #e0e0d8;background:#FFFFFF;border-radius:8px;padding:2rem;max-width:620px;margin-top:32px;">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;">
+        <img src="Marcos_Juejati.jpg" alt="Marcos Juejati" style="width:96px;height:96px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;">
+        <div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:#1A1A2E;">Marcos Juejati</div>
+          <div style="font-size:13px;color:#6b7280;line-height:1.5;margin-top:4px;">Presidente de Lamroth Hakol, Vicente López, Argentina; presidente da rede NETA Latam; membro da RFE Latam; membro de Camondo Argentina</div>
+        </div>
+      </div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:#1A1A2E;margin-bottom:16px;line-height:1.3;">Fazer rede, ou como catalisar o judaísmo nos tempos que correm</h3>
+      <div id="artigo-extracto">
+        <p style="font-size:16px;color:#3D4A5C;line-height:1.8;">Acredito profundamente nas redes como mecanismo de nos relacionarmos, de estarmos juntos e de nos unirmos. Durante séculos, nossas comunidades se organizaram como fortalezas: cada instituição, um edifício sólido, com limites claros, com identidade própria, com um dentro e um fora bem definidos. Esse modelo nos permitiu nos sustentar, preservar nossas tradições, transmitir o valor do estudo, da comunidade, da responsabilidade compartilhada.</p>
+      </div>
+      <a href="articulo-juejati-pt.html" style="display:inline-block;margin-top:20px;color:#3A9688;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;text-decoration:none;">Ler artigo completo →</a>
+    </div>
+  </div>
+</section>
+
+<section id="aliados">
+  <div class="container">
+    <p class="section-eyebrow">Comunidade e aliados</p>
+    <h2 class="aliados-title">Uma rede que cresce com instituições de referência.</h2>
+    <p class="aliados-text">A RFE articula seu trabalho com organizações líderes em filantropia e comunidade judaica a nível regional e internacional:</p>
+    <div class="aliados-grid">
+      <div class="aliado-box"><img src="LOGOS socios/Fundación metta saade.png" alt="Fundación Metta Saade"></div>
+      <div class="aliado-box"><img src="logos/instituto goldentree.png" alt="Instituto Goldentree" style="padding:4px; transform:scale(1.3);"></div>
+      <div class="aliado-box"><img src="LOGOS socios/Familia Fleck.png" alt="Familia Fleck"></div>
+      <div class="aliado-box"><img src="logos/11-fundacao-arymax.png" alt="Fundação Arymax" style="padding:4px; transform:scale(1.3);"></div>
+    </div>
+    <div style="height:16px"></div>
+    <div class="aliados-grid-2">
+      <div class="aliado-box"><img src="logos/JFN - Horizontal (1).png" alt="Jewish Funders Network"></div>
+      <div class="aliado-box"><img src="logos/LAZOS.png" alt="Lazos"></div>
+      <div class="aliado-box"><img src="logos/JDC_The_Joint_Color_Block_Blue_24032021.png" alt="The Joint · JDC"></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <p class="contacto-eyebrow">Contato</p>
+  <h2 class="contacto-title">Junte-se à conversa.</h2>
+  <p class="contacto-text">Se você lidera iniciativas filantrópicas e acredita que o impacto se multiplica quando agimos em comunidade, a RFE é o seu espaço. Escreva para nós: queremos conhecer você.</p>
+  <a href="https://forms.gle/CJeCb49vpHMRWnUD9" target="_blank" class="contacto-btn">Quero fazer parte</a>
+</section>
+
+<footer>
+  <p>© 2026 RFE LATAM — Rede Judaica de Filantropia Estratégica</p>
+</footer>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById('mobile-menu');
+  var btn = document.getElementById('hamburger-btn');
+  menu.classList.toggle('open');
+  btn.textContent = menu.classList.contains('open') ? '✕' : '☰';
+}
+function closeMenu() {
+  var menu = document.getElementById('mobile-menu');
+  var btn = document.getElementById('hamburger-btn');
+  menu.classList.remove('open');
+  btn.textContent = '☰';
+}
+</script>
+</body>
+</html>
