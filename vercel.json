@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/RFE_LATAM.html" }
+  ],
+  "redirects": [
+    { "source": "/RFE_LATAM.html", "permanent": true, "destination": "/" }
+  ]
+}
