@@ -130,8 +130,8 @@
   #aliados .section-eyebrow { color:#FFFFFF; }
   .aliados-title { font-size:clamp(34px,4vw,52px); font-weight:600; color:#1a2233; margin-bottom:16px; margin-top:16px; }
   .aliados-text { font-size:17px; color:rgba(26,34,51,0.65); margin-bottom:56px; max-width:680px; }
-  .aliados-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:16px; }
-  .aliados-grid-2 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; max-width:75%; }
+  .aliados-unified { display:flex; flex-wrap:wrap; justify-content:center; gap:16px; }
+  .aliados-unified .aliado-box { flex:0 0 calc(33.333% - 11px); }
   .aliado-box { background:#FFFFFF; border:none; padding:0; display:flex; align-items:center; justify-content:center; height:160px; }
   .aliado-box img { width:100%; height:100%; object-fit:contain; padding:16px; }
 
@@ -167,8 +167,7 @@
     .timeline { grid-template-columns:1fr; }
     .timeline::before { display:none; }
     .voces-grid { grid-template-columns:1fr; }
-    .aliados-grid { grid-template-columns:1fr 1fr; }
-    .aliados-grid-2 { grid-template-columns:1fr 1fr; max-width:100%; }
+    .aliados-unified .aliado-box { flex:0 0 calc(50% - 8px); }
   }
   @media (max-width:600px) {
     nav { padding:0 16px; height:60px; }
@@ -181,8 +180,7 @@
     .hero-title { font-size:30px; }
     .hero-subtitle { font-size:16px; }
     .stats-grid { grid-template-columns:1fr; }
-    .aliados-grid { grid-template-columns:1fr 1fr; }
-    .aliados-grid-2 { grid-template-columns:1fr 1fr; max-width:100%; }
+    .aliados-unified .aliado-box { flex:0 0 calc(50% - 8px); }
   }
 
   /* HAMBURGER MENU */
@@ -407,14 +405,9 @@
     <p class="section-eyebrow">Comunidade e aliados</p>
     <h2 class="aliados-title">Uma rede que cresce com instituições de referência.</h2>
     <p class="aliados-text">A RFE articula seu trabalho com organizações líderes em filantropia e comunidade judaica a nível regional e internacional:</p>
-    <div class="aliados-grid">
+    <div class="aliados-unified">
       <div class="aliado-box"><img src="LOGOS socios/Fundación metta saade.png" alt="Fundación Metta Saade"></div>
       <div class="aliado-box"><img src="logos/instituto goldentree.png" alt="Instituto Goldentree" style="padding:4px; transform:scale(1.3);"></div>
-      <div class="aliado-box"><img src="LOGOS socios/Familia Fleck.png" alt="Familia Fleck"></div>
-      <div class="aliado-box"><img src="logos/11-fundacao-arymax.png" alt="Fundação Arymax" style="padding:4px; transform:scale(1.3);"></div>
-    </div>
-    <div style="height:16px"></div>
-    <div class="aliados-grid-2">
       <div class="aliado-box"><img src="logos/JFN - Horizontal (1).png" alt="Jewish Funders Network"></div>
       <div class="aliado-box"><img src="logos/LAZOS.png" alt="Lazos"></div>
       <div class="aliado-box"><img src="logos/JDC_The_Joint_Color_Block_Blue_24032021.png" alt="The Joint · JDC"></div>
