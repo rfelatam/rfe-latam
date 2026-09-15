@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJ4K3X81G0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CJ4K3X81G0');
+  </script>
+<meta charset="UTF-8">
+<meta property="og:title" content="Cuando una comunidad elige caminar unida" />
+<meta property="og:description" content="Por Yael Sandberg Esquenazi — Directora Ejecutiva del Instituto Golden Tree. La experiencia del Fundo de Bolsas y los aprendizajes para la filantropía estratégica latinoamericana." />
+<meta property="og:image" content="https://rfe-latam.vercel.app/Yael_Sandberg_og.jpg" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rfe-latam.vercel.app/articulo-fundo-bolsas.html" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuando una comunidad elige caminar unida — Yael Sandberg Esquenazi · RFE LATAM</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+  :root {
+    --teal: #2A9D8F;
+    --teal-dark: #247B71;
+    --teal-bright: #34B2A3;
+    --teal-20: #D8EFED;
+    --navy-dark: #1A1A2E;
+    --navy-mid: #1E2E3E;
+    --navy-card: #1A2840;
+    --marfil: #F8F7F4;
+    --marfil-dark: #EDEAE4;
+    --white: #FFFFFF;
+    --text-dark: #1A1A2E;
+    --text-mid: #3D4A5C;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'DM Sans',sans-serif; background:var(--marfil); color:var(--text-dark); font-size:18px; line-height:1.7; }
+  h1,h2,h3,h4 { font-family:'Cormorant Garamond',serif; line-height:1.2; }
+
+  /* NAV */
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:#1a2233; padding:0 48px; height:90px; display:flex; align-items:center; justify-content:space-between; }
+  .nav-logo { display:flex; align-items:center; background:none; }
+  .nav-logo img { height:78px; width:auto; display:block; }
+  .nav-links { display:flex; align-items:center; gap:18px; position:absolute; left:50%; transform:translateX(-50%); white-space:nowrap; }
+  .nav-links a { font-family:'DM Sans',sans-serif; font-size:0.72rem; font-weight:500; letter-spacing:0.03em; text-transform:uppercase; color:#FFFFFF; text-decoration:none; transition:color 0.2s; white-space:nowrap; }
+  .nav-links a:hover { color:var(--teal); }
+  .nav-cta { background:var(--teal); color:white !important; text-decoration:none; padding:10px 24px; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; transition:background 0.2s; }
+  .nav-cta:hover { background:var(--teal-dark) !important; }
+
+  /* HERO */
+  #hero { min-height:100vh; background:#e8f0f5; display:flex; align-items:center; padding:120px 80px 80px; }
+  .hero-inner { max-width:1200px; margin:0 auto; width:100%; display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
+  .hero-text { display:flex; flex-direction:column; align-items:flex-start; }
+  .hero-title { font-size:clamp(32px,4vw,52px); font-weight:700; color:#1a2233; margin-bottom:24px; line-height:1.2; }
+  .hero-subtitle { font-size:clamp(16px,1.5vw,18px); color:rgba(26,34,51,0.7); margin-bottom:40px; font-weight:400; line-height:1.7; }
+  .hero-btn { display:inline-block; background:#3A9688; color:white; text-decoration:none; padding:16px 40px; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; transition:background 0.2s; }
+  .hero-btn:hover { background:#2d7a6e; }
+  .hero-logo { display:flex; align-items:center; justify-content:center; }
+  .hero-logo img { width:100%; max-width:560px; height:auto; mix-blend-mode:multiply; }
+
+  /* GENERAL */
+  section { padding:100px 48px; }
+  .section-eyebrow { font-family:'DM Sans',sans-serif; font-size:14px; font-weight:600; letter-spacing:0.3em; text-transform:uppercase; color:#FFFFFF; background:#3A9688; padding:8px 16px; border-radius:4px; display:inline-block; margin-bottom:20px; }
+  .container { max-width:1100px; margin:0 auto; }
+
+  /* QUÉ ES */
+  #que-es { background:var(--marfil); }
+  .que-es-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; margin-top:48px; }
+  .que-es-title { font-size:clamp(36px,4vw,54px); font-weight:600; color:var(--navy-dark); grid-column:1/-1; }
+  .que-es-text { font-size:18px; color:var(--text-mid); line-height:1.8; }
+  .que-es-caja { border:3px solid #3A9688; padding:52px 48px; background:var(--white); min-width:320px; }
+  .que-es-caja-title { font-family:'Cormorant Garamond',serif; font-size:clamp(24px,2.5vw,36px); font-weight:700; color:#3A9688; margin-bottom:24px; font-style:italic; line-height:1.15; }
+  .que-es-caja p { font-size:17px; color:var(--text-mid); line-height:1.75; }
+
+  /* POR QUÉ */
+  #por-que { background:var(--navy-dark); color:white; }
+  #por-que .section-eyebrow { color:#FFFFFF; }
+  .por-que-title { font-size:clamp(34px,4vw,52px); font-weight:600; color:white; margin-top:16px; margin-bottom:24px; max-width:780px; }
+  .por-que-text { font-size:18px; color:rgba(255,255,255,0.65); max-width:700px; margin-bottom:60px; line-height:1.8; }
+  .pilares-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .pilar-card { background:var(--navy-card); border:1px solid rgba(42,157,143,0.3); border-top:3px solid var(--teal); padding:40px 32px; }
+  .pilar-card h3 { font-size:28px; font-weight:600; color:white; margin-bottom:20px; }
+  .pilar-card p { font-size:16px; color:rgba(255,255,255,0.6); line-height:1.75; }
+
+  /* ESTADÍSTICAS */
+  #estadisticas { background:var(--marfil); }
+  .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin-top:60px; border:1px solid var(--marfil-dark); }
+  .stat-item { padding:40px 24px; border-right:1px solid var(--marfil-dark); text-align:center; }
+  .stat-item:last-child { border-right:none; }
+  .stat-number { font-family:'Cormorant Garamond',serif; font-size:80px; font-weight:300; color:var(--teal); line-height:1; margin-bottom:16px; }
+  .stat-label { font-family:'DM Sans',sans-serif; font-size:0.9rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--text-mid); }
+
+  /* QUÉ HACEMOS */
+  #que-hacemos { background:var(--navy-mid); color:white; }
+  #que-hacemos .section-eyebrow { color:#FFFFFF; }
+  .que-hacemos-title { font-size:clamp(36px,4vw,54px); font-weight:600; color:white; margin-bottom:56px; margin-top:16px; }
+  .compromisos-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  .compromiso-card { background:rgba(255,255,255,0.04); border-left:4px solid var(--teal); padding:40px 36px; transition:background 0.2s; }
+  .compromiso-card:hover { background:rgba(255,255,255,0.07); }
+  .compromiso-card h3 { font-family:'DM Sans',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--teal); margin-bottom:20px; }
+  .compromiso-card p { font-size:17px; color:rgba(255,255,255,0.72); line-height:1.75; }
+
+  /* RED EN MOVIMIENTO */
+  #movimiento { background:var(--navy-dark); color:white; }
+  #movimiento .section-eyebrow { color:#FFFFFF; }
+  .movimiento-title { font-size:clamp(34px,4vw,52px); font-weight:600; color:white; margin-bottom:20px; margin-top:16px; }
+  .movimiento-text { font-size:18px; color:rgba(255,255,255,0.65); max-width:720px; margin-bottom:64px; line-height:1.8; }
+
+  .timeline { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; position:relative; }
+  .timeline::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:var(--teal); }
+
+  .timeline-item { padding-top:32px; position:relative; }
+  .timeline-dot { position:absolute; top:-7px; left:0; width:14px; height:14px; border-radius:50%; background:var(--teal); }
+
+  .timeline-card { background:var(--navy-card); border:1px solid rgba(42,157,143,0.25); overflow:hidden; }
+  .timeline-foto { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
+  .timeline-info { padding:28px 24px; }
+  .timeline-city { font-family:'Cormorant Garamond',serif; font-size:26px; font-weight:600; color:white; margin-bottom:6px; }
+  .timeline-date { font-size:13px; color:var(--teal); font-weight:600; margin-bottom:12px; letter-spacing:0.05em; }
+  .timeline-desc { font-size:15px; color:rgba(255,255,255,0.6); line-height:1.7; }
+
+  .movimiento-nota { font-style:italic; color:rgba(255,255,255,0.45); font-size:16px; text-align:center; border-top:1px solid rgba(255,255,255,0.1); padding-top:32px; margin-top:48px; }
+
+  /* VOCES */
+  #voces { background:var(--marfil); }
+  .voces-title { font-size:clamp(36px,4vw,54px); font-weight:600; color:var(--navy-dark); margin-bottom:16px; margin-top:16px; }
+  .voces-subtitle { font-size:18px; color:var(--text-mid); max-width:680px; margin-bottom:64px; line-height:1.8; }
+  .voces-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:32px; }
+  .voz-card { background:var(--white); border-top:3px solid var(--teal); padding:40px 32px; }
+  .speaker-date { font-size:0.78rem; color:#ffffff; background-color:#3A9688; padding:4px 14px; border-radius:20px; display:inline-block; margin-top:10px; margin-bottom:16px; text-align:center; }
+  .voz-foto { width:140px; height:140px; border-radius:50%; background:var(--teal-20); border:2px solid var(--teal); display:block; margin-bottom:20px; object-fit:cover; object-position:top center; overflow:hidden; }
+  .voz-nombre { font-family:'Cormorant Garamond',serif; font-size:26px; font-weight:600; color:#3A9688; margin-bottom:8px; }
+  .voz-desc { font-size:15px; color:var(--text-mid); line-height:1.7; }
+
+  /* ALIADOS */
+  #aliados { background-color:#FFFFFF; color:#3A9688; }
+  #aliados .section-eyebrow { color:#FFFFFF; }
+  .aliados-title { font-size:clamp(34px,4vw,52px); font-weight:600; color:#1a2233; margin-bottom:16px; margin-top:16px; }
+  .aliados-text { font-size:17px; color:rgba(26,34,51,0.65); margin-bottom:56px; max-width:680px; }
+  .aliados-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:16px; }
+  .aliados-grid-2 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; max-width:75%; }
+  .aliado-box { background:#FFFFFF; border:none; padding:0; display:flex; align-items:center; justify-content:center; height:160px; }
+  .aliado-box img { width:100%; height:100%; object-fit:contain; padding:16px; }
+
+  /* CONTACTO */
+  #contacto { background:var(--teal); text-align:center; padding:120px 48px; }
+  .contacto-eyebrow { font-family:'DM Sans',sans-serif; font-size:18px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.7); margin-bottom:24px; }
+  .contacto-title { font-family:'Cormorant Garamond',serif; font-size:clamp(42px,6vw,72px); font-weight:300; font-style:italic; color:white; margin-bottom:24px; }
+  .contacto-text { font-size:18px; color:rgba(255,255,255,0.82); max-width:560px; margin:0 auto 48px; line-height:1.75; }
+  .contacto-btn { display:inline-block; background:white; color:var(--teal-dark); text-decoration:none; padding:18px 48px; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; transition:all 0.2s; }
+  .contacto-btn:hover { background:var(--navy-dark); color:white; }
+
+  /* FOOTER */
+  footer { background:var(--navy-dark); padding:40px 48px; display:flex; align-items:center; justify-content:space-between; }
+  footer img { height:36px; opacity:0.7; }
+  footer p { font-size:13px; color:rgba(255,255,255,0.35); }
+
+  /* RESPONSIVE */
+  @media (max-width:900px) {
+    section { padding:72px 28px; }
+    nav { padding:0 24px; }
+    .nav-links { gap:20px; }
+    .nav-links a { font-size:11px; }
+    footer { padding:32px 24px; flex-direction:column; gap:16px; text-align:center; }
+    #hero { padding:100px 40px 60px; }
+    .hero-inner { grid-template-columns:1fr; gap:40px; text-align:center; }
+    .hero-text { align-items:center; }
+    .hero-logo { order:-1; }
+    .hero-logo img { max-width:300px; }
+    .que-es-grid { grid-template-columns:1fr; gap:40px; }
+    .pilares-grid { grid-template-columns:1fr; }
+    .stats-grid { grid-template-columns:1fr 1fr; }
+    .stat-item { border-bottom:1px solid var(--marfil-dark); }
+    .compromisos-grid { grid-template-columns:1fr; }
+    .timeline { grid-template-columns:1fr; }
+    .timeline::before { display:none; }
+    .voces-grid { grid-template-columns:1fr; }
+    .aliados-grid { grid-template-columns:1fr 1fr; }
+    .aliados-grid-2 { grid-template-columns:1fr 1fr; max-width:100%; }
+  }
+  @media (max-width:600px) {
+    nav { padding:0 16px; height:60px; }
+    .nav-links { gap:12px; }
+    .nav-links a:not(.nav-cta) { display:none; }
+    .nav-cta { padding:8px 16px; font-size:11px; }
+    #hero { padding:80px 24px 48px; }
+    .hero-inner { gap:32px; }
+    .hero-logo img { max-width:220px; }
+    .hero-title { font-size:30px; }
+    .hero-subtitle { font-size:16px; }
+    .hero-btn { padding:14px 28px; font-size:12px; }
+    .stats-grid { grid-template-columns:1fr; }
+    .aliados-grid { grid-template-columns:1fr 1fr; }
+    .aliados-grid-2 { grid-template-columns:1fr 1fr; max-width:100%; }
+  }
+
+  .articulo-wrap { max-width:720px; margin:0 auto; padding:140px 48px 80px; }
+  .articulo-volver { font-family:'DM Sans',sans-serif; font-size:13px; font-weight:600; color:#3A9688; text-decoration:none; letter-spacing:0.05em; display:inline-block; margin-bottom:48px; }
+  .articulo-volver:hover { color:#247B71; }
+  .articulo-autor { display:flex; align-items:center; gap:20px; margin-bottom:36px; }
+  .articulo-autor img { width:96px; height:96px; border-radius:50%; object-fit:cover; object-position:top; flex-shrink:0; }
+  .articulo-nombre { font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:600; color:#1A1A2E; }
+  .articulo-cargo { font-size:13px; color:#6b7280; line-height:1.5; margin-top:6px; }
+  .articulo-titulo { font-family:'Cormorant Garamond',serif; font-size:clamp(28px,4vw,42px); font-weight:600; color:#1A1A2E; line-height:1.2; margin-bottom:40px; }
+  .articulo-body p { font-size:17px; color:#3D4A5C; line-height:1.9; margin-bottom:20px; }
+
+  /* HAMBURGER MENU */
+  .nav-hamburger { display:none; background:none; border:none; color:#FFFFFF; font-size:24px; cursor:pointer; padding:4px 8px; z-index:101; }
+  .nav-mobile-menu { display:none; position:fixed; top:90px; left:0; right:0; background:#1A2340; z-index:99; flex-direction:column; padding:16px 0; }
+  .nav-mobile-menu a { font-family:'DM Sans',sans-serif; font-size:13px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#FFFFFF; text-decoration:none; padding:14px 32px; display:block; border-bottom:1px solid rgba(255,255,255,0.07); }
+  .nav-mobile-menu a:last-child { border-bottom:none; }
+  .nav-mobile-menu a:hover { background:rgba(255,255,255,0.05); }
+  .nav-mobile-menu.open { display:flex; }
+  @media (max-width:768px) {
+    .nav-links { display:none !important; }
+    .nav-hamburger { display:block; }
+  }
+  nav a:visited { color: #FFFFFF !important; }
+  .nav-links a:visited { color: #FFFFFF !important; }
+
+  /* Subtítulos editoriales dentro del cuerpo del artículo */
+  .fb-subtitulo { font-family:'Cormorant Garamond',serif; font-size:clamp(24px,3vw,30px); font-weight:600; color:#1A1A2E; line-height:1.25; margin-top:56px; margin-bottom:22px; }
+  .fb-subtitulo::after { content:''; display:block; width:44px; height:3px; background:#3A9688; margin-top:14px; }
+
+  /* Imágenes editoriales intercaladas — escala editorial, sin recortes */
+  .fb-figure { margin:56px 0; text-align:center; }
+  .fb-figure img { display:block; height:auto; max-width:100%; margin:0 auto; }
+  .fb-figure-hero img { width:88%; margin-left:0; margin-right:auto; }
+  .fb-figure-inline img { width:72%; }
+  .fb-figure-sm img { width:54%; }
+
+  /* Bloque de cifras destacadas (mismo lenguaje visual que #estadisticas de la home) */
+  .fb-cifras { border:1px solid var(--marfil-dark); background:var(--white); margin:44px 0 48px; }
+  .fb-cifras-grid { display:grid; grid-template-columns:repeat(5,1fr); }
+  .fb-cifra { padding:28px 12px; text-align:center; border-right:1px solid var(--marfil-dark); }
+  .fb-cifra:last-child { border-right:none; }
+  .fb-cifra-num { font-family:'Cormorant Garamond',serif; font-size:clamp(28px,4vw,40px); font-weight:300; color:var(--teal); line-height:1; margin-bottom:10px; }
+  .fb-cifra-label { font-family:'DM Sans',sans-serif; font-size:0.68rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-mid); line-height:1.4; }
+
+  /* Nota de reconocimiento — diferenciada del cuerpo, sin look promocional */
+  .fb-nota { margin-top:56px; padding:28px 32px; background:var(--marfil-dark); border-left:3px solid var(--teal); }
+  .fb-nota-titulo { font-family:'DM Sans',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--teal-dark); margin-bottom:12px; }
+  .fb-nota p { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:17px; color:var(--text-mid); line-height:1.75; margin:0; }
+
+  @media (max-width:600px) {
+    .fb-cifras-grid { grid-template-columns:repeat(2,1fr); }
+    .fb-cifra { border-bottom:1px solid var(--marfil-dark); }
+    .fb-cifra:nth-child(odd) { border-right:1px solid var(--marfil-dark); }
+    .fb-cifra:nth-child(even) { border-right:none; }
+    .fb-figure-hero img { width:95%; margin-left:0; margin-right:auto; }
+    .fb-figure-inline img { width:92%; }
+    .fb-figure-sm img { width:88%; }
+    .fb-nota { padding:24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="RFE_LATAM.html#hero" class="nav-logo"><img src="logos/logoblanco.png" alt="RFE"></a>
+  <div class="nav-links">
+    <a href="RFE_LATAM.html#que-es">¿Qué es RFE?</a>
+    <a href="RFE_LATAM.html#por-que">¿Por qué existe?</a>
+    <a href="RFE_LATAM.html#que-hacemos">¿Qué hacemos?</a>
+    <a href="RFE_LATAM.html#movimiento">Encuentros</a>
+    <a href="RFE_LATAM.html#voces">Referentes</a>
+    <a href="RFE_LATAM.html#aliados">Aliados</a>
+    <a href="RFE_LATAM.html#articulos">Artículos</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <span style="font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;color:#FFFFFF;">ES</span>
+    <span style="color:rgba(255,255,255,0.4);">|</span>
+    <a href="articulo-fundo-bolsas-pt.html" style="font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;color:rgba(255,255,255,0.5);text-decoration:none;cursor:pointer;">PT</a>
+    <a href="https://forms.gle/CJeCb49vpHMRWnUD9" target="_blank" class="nav-cta">Forma Parte</a>
+  </div>
+  <button id="hamburger-btn" class="nav-hamburger" onclick="toggleMenu()">☰</button>
+</nav>
+<div id="mobile-menu" class="nav-mobile-menu">
+    <a href="RFE_LATAM.html#que-es" onclick="closeMenu()">¿Qué es RFE?</a>
+    <a href="RFE_LATAM.html#por-que" onclick="closeMenu()">¿Por qué existe?</a>
+    <a href="RFE_LATAM.html#que-hacemos" onclick="closeMenu()">¿Qué hacemos?</a>
+    <a href="RFE_LATAM.html#movimiento" onclick="closeMenu()">Encuentros</a>
+    <a href="RFE_LATAM.html#voces" onclick="closeMenu()">Referentes</a>
+    <a href="RFE_LATAM.html#articulos" onclick="closeMenu()">Artículos</a>
+    <a href="RFE_LATAM.html#aliados" onclick="closeMenu()">Aliados</a>
+</div>
+
+<div class="articulo-wrap">
+  <a href="RFE_LATAM.html#articulos" class="articulo-volver">← Volver a Artículos</a>
+  <div class="articulo-autor">
+    <img src="Yael_Sandberg.jpg" alt="Yael Sandberg Esquenazi">
+    <div>
+      <div class="articulo-nombre">Yael Sandberg Esquenazi</div>
+      <div class="articulo-cargo">Directora Ejecutiva del Instituto Golden Tree</div>
+    </div>
+  </div>
+  <h1 class="articulo-titulo">Cuando una comunidad elige caminar unida</h1>
+
+  <figure class="fb-figure fb-figure-hero">
+    <img src="fundo-bolsas-portada.jpg" alt="Sala de voluntarios trabajando en la campaña del Fundo de Bolsas, con mesas llenas de laptops y teléfonos">
+  </figure>
+
+  <div class="articulo-body">
+    <p>Toda gran transformación comienza cuando una comunidad deja de preguntarse “¿quién lo hará?” y empieza a responder “lo haremos nosotros”.</p>
+    <p>La reciente campaña del Fundo de Bolsas demostró precisamente eso. Los R$ 50 millones (casi USD10 millones) recaudados son extraordinarios. Pero lo que realmente merece ser celebrado es la capacidad de miles de personas de unirse en torno a un mismo propósito: invertir en educación y, con ello, en el futuro colectivo.</p>
+    <p>Los números importan porque permiten dimensionar esa movilización: más de 4.000 donantes, más de 800 voluntarios, 14 escuelas trabajando juntas y la ampliación del número de becas concedidas, llegando a casi 900 por año.</p>
+    <p>En conjunto, estos resultados consolidan la mayor campaña de movilización comunitaria en participación, volumen recaudado, número de donantes y voluntarios, y diversidad de modelos de recaudación. Pero también cuentan una historia que va más allá de los indicadores: la de una comunidad que fue capaz de transformar confianza, transparencia y colaboración en acción colectiva.</p>
+    <p>Cuando existe la convicción de que invertir en educación es invertir en el propio futuro, la filantropía deja de ser solamente un acto de donación y se convierte en una construcción compartida.</p>
+
+    <div class="fb-cifras">
+      <div class="fb-cifras-grid">
+        <div class="fb-cifra"><div class="fb-cifra-num">R$ 50M</div><div class="fb-cifra-label">Recaudados</div></div>
+        <div class="fb-cifra"><div class="fb-cifra-num">+4.000</div><div class="fb-cifra-label">Donantes</div></div>
+        <div class="fb-cifra"><div class="fb-cifra-num">+800</div><div class="fb-cifra-label">Voluntarios</div></div>
+        <div class="fb-cifra"><div class="fb-cifra-num">14</div><div class="fb-cifra-label">Escuelas trabajando juntas</div></div>
+        <div class="fb-cifra"><div class="fb-cifra-num">~900</div><div class="fb-cifra-label">Becas por año</div></div>
+      </div>
+    </div>
+
+    <h2 class="fb-subtitulo">Mucho más que la recaudación</h2>
+    <p>En la filantropía estratégica, los recursos financieros nunca son un fin en sí mismos. Son instrumentos para generar transformación. Toda campaña exitosa comienza mucho antes de la primera donación. Nace de la construcción de una visión compartida, de la capacidad de movilizar personas en torno a una causa y de la credibilidad construida a lo largo del tiempo.</p>
+    <p>Eso es precisamente lo que convierte al Fundo de Bolsas en una experiencia relevante para toda América Latina. Su trayectoria demuestra que las campañas de gran escala no son resultado únicamente de una buena estrategia de recaudación, sino de la construcción paciente de relaciones de confianza entre instituciones, liderazgos, voluntarios, escuelas, familias, donantes, profesionales y toda la comunidad.</p>
+    <p>La confianza es el capital más valioso de la filantropía. No se conquista con discursos, sino con consistencia, transparencia y responsabilidad.</p>
+
+    <h2 class="fb-subtitulo">Educación: una inversión de largo plazo</h2>
+    <figure class="fb-figure fb-figure-sm">
+      <img src="fundo-bolsas-educacion.jpg" alt="Miembros del Consejo del Fundo de Bolsas junto a la figura de una alumna en uniforme escolar, símbolo de la campaña">
+    </figure>
+    <p>En tiempos de tantas urgencias, es legítimo preguntarse dónde invertir para producir cambios duraderos. Pocas respuestas son tan consistentes como la educación.</p>
+    <p>Cada beca concedida representa mucho más que la permanencia de un estudiante en su escuela. Fortalece a las familias, preserva vínculos comunitarios, amplía oportunidades, desarrolla liderazgos y contribuye a la continuidad de una identidad construida a lo largo de generaciones.</p>
+    <p>Cuando una comunidad decide invertir en educación, no está solamente apoyando a individuos. Está fortaleciendo su capital humano, social y cultural. Está invirtiendo en su propio futuro.</p>
+    <p>Quizá esta sea una de las mayores lecciones de la campaña: comprender que la educación no es un gasto comunitario. Es una inversión estratégica de largo plazo, cuyos efectos se extienden mucho más allá del período en que se concede cada beca.</p>
+
+    <h2 class="fb-subtitulo">El verdadero diferencial fue la colaboración</h2>
+    <p>Ninguna organización podría alcanzar por sí sola resultados de esta magnitud. La campaña fue construida por cientos de personas que pusieron su tiempo, su energía, sus recursos, sus talentos y su credibilidad al servicio de una causa colectiva.</p>
+    <p>Los padres movilizaron a las familias. Los alumnos inspiraron a nuevas generaciones de donantes. Los filántropos abrieron puertas y multiplicaron oportunidades. Los voluntarios organizaron eventos, promovieron encuentros, compartieron historias y transformaron sus redes personales en redes de solidaridad. Las instituciones comunitarias sumaron capacidades y ampliaron el alcance de la movilización.</p>
+
+    <figure class="fb-figure fb-figure-inline">
+      <img src="fundo-bolsas-colaboracion.jpg" alt="Grupo de voluntarias de distintas generaciones trabajando en la campaña, frente a laptops y teléfonos">
+    </figure>
+
+    <p>Existe, sin embargo, un elemento que muchas veces permanece menos visible para quienes observan solo el resultado final: las grandes movilizaciones comunitarias no suceden únicamente gracias a la buena voluntad. Exigen planificación, método, coordinación, escucha, seguimiento permanente y un equipo profesional dedicado, capaz de conectar personas, procesos y propósito a lo largo de todo el año.</p>
+    <p>Detrás de cada voluntario movilizado, de cada donante comprometido y de cada beca concedida existe un trabajo profesional que transforma la intención en ejecución, garantiza continuidad, organiza la información, acompaña los criterios y sostiene la confianza necesaria para que el sistema funcione.</p>
+    <p>La fuerza de esta iniciativa reside precisamente en la complementariedad entre los distintos roles. El liderazgo inspira y abre caminos. El equipo profesional crea estructura y continuidad. Los voluntarios amplían el alcance y dan vida a la movilización. Los donantes hacen posible la inversión. Las escuelas y las familias conectan la causa con la realidad cotidiana. Los alumnos recuerdan a todos por qué existe este esfuerzo.</p>
+    <p>Cada contribución tiene una naturaleza diferente, pero ninguna es secundaria. El resultado colectivo nace justamente de la capacidad de reconocer el valor de cada papel y de hacer que todos trabajen en sinergia.</p>
+    <p>En un momento en que tantas comunidades enfrentan polarización y fragmentación, la campaña demostró que es posible concentrar la energía en aquello que une, sin negar las diferencias que naturalmente existen. El propósito común se volvió más grande que cualquier divergencia.</p>
+
+    <h2 class="fb-subtitulo">La transparencia genera confianza. La confianza genera impacto.</h2>
+    <p>Hay un elemento presente en todas las grandes iniciativas filantrópicas exitosas: la rendición de cuentas (accountability). Más que informar resultados, significa asumir responsabilidad por las decisiones tomadas, los criterios utilizados y los resultados producidos.</p>
+    <p>Cada vez más, los donantes desean comprender no solo cuánto se recaudó, sino cómo se utilizan los recursos, qué criterios orientan las decisiones, cómo se acompaña el proceso y qué transformaciones se generan efectivamente.</p>
+    <p>La transparencia dejó de ser únicamente una obligación institucional. Se convirtió en una estrategia para fortalecer la confianza.</p>
+    <p>El Fundo de Bolsas construyó su reputación precisamente por combinar gobernanza, criterios claros, seguimiento profesional, rendición de cuentas y un compromiso permanente con el impacto. Este modelo fortalece no solo una campaña: fortalece toda la cultura de donación de la comunidad.</p>
+    <p>Cuando existe confianza, las personas vuelven a donar. Invitan a nuevos donantes. Comprometen a sus familias. Movilizan sus redes. La confianza se convierte en un activo colectivo capaz de multiplicar el impacto a lo largo del tiempo.</p>
+
+    <h2 class="fb-subtitulo">La fuerza de la movilización comunitaria</h2>
+    <p>Quizá el aspecto más emocionante de esta campaña sea comprender que pertenece a todos. Al gran donante y al niño que participó en una acción solidaria en la escuela. Al filántropo experimentado y al joven que realizó su primera donación. Al liderazgo comunitario, al profesional que organizó procesos y al voluntario que dedicó algunas horas de su día a llamar, organizar un evento o compartir un mensaje.</p>
+    <p>Esta diversidad de participación fortalece un sentimiento esencial para cualquier comunidad: el sentido de pertenencia.</p>
+    <p>Cuando las personas comprenden que pueden contribuir de diferentes maneras, dejan de ser únicamente beneficiarias o espectadoras y se convierten en protagonistas de la transformación. Es precisamente esta cultura participativa la que ayuda a garantizar la sostenibilidad de las iniciativas de largo plazo.</p>
+    <p>El valor de este movimiento no está en identificar quién fue el protagonista, sino en reconocer que el resultado solo fue posible porque muchos protagonistas aceptaron compartir responsabilidad, trabajo y mérito.</p>
+
+    <h2 class="fb-subtitulo">Un aprendizaje para la filantropía latinoamericana</h2>
+    <p>La experiencia del Fundo de Bolsas ofrece aprendizajes que trascienden los límites de una sola campaña. Demuestra que los grandes resultados suceden cuando las organizaciones eligen cooperar en lugar de competir; cuando la información y las responsabilidades se comparten con transparencia; cuando el impacto colectivo se coloca por encima de los intereses individuales; y cuando los liderazgos comprenden que construir confianza es tan importante como recaudar recursos.</p>
+    <p>Estos principios dialogan directamente con los desafíos que enfrenta la filantropía estratégica en toda América Latina. Vivimos un momento en que los problemas sociales se vuelven cada vez más complejos y en el que ninguna organización puede enfrentarlos por sí sola.</p>
+    <p>El futuro pertenece a las redes, a las alianzas y a las iniciativas capaces de movilizar a distintos actores en torno a objetivos compartidos, aprovechando las complementariedades y las sinergias positivas sin permitir que las diferencias nos alejen de aquello que podemos construir juntos.</p>
+
+    <h2 class="fb-subtitulo">Más que una campaña, un legado</h2>
+    <p>Al celebrar los resultados de esta campaña, celebramos mucho más que un extraordinario desempeño en recaudación. Al final, quizá esta sea la mayor lección de la filantropía estratégica. El impacto no nace solamente de los recursos que recaudamos. Nace de la confianza que construimos, de la colaboración que cultivamos, de la transparencia que practicamos y de la capacidad de unir a personas diferentes en torno a un propósito que pertenece a todos.</p>
+    <p>Porque las comunidades fuertes no son aquellas en las que todos piensan de la misma manera. Son aquellas que descubren que su futuro es demasiado grande para ser construido individualmente y eligen construirlo juntas.</p>
+    <p>Es también por eso que compartir esta experiencia en la Red de Filantropía Estratégica de América Latina (RFE) tiene tanto sentido. La propuesta de valor de una red como la RFE reside precisamente en transformar experiencias particulares en aprendizaje colectivo: crear un espacio de confianza en el que filántropos, fundaciones y liderazgos puedan compartir prácticas, errores, descubrimientos y modelos que ayuden a todo el ecosistema a avanzar.</p>
+    <p>Al llevar el caso del Fundo de Bolsas a esta conversación, no pretendemos presentar una fórmula lista para ser replicada. Cada comunidad tiene su propia realidad, su historia y sus desafíos. Lo que sí puede viajar de una experiencia a otra son los principios: la colaboración como estrategia, la transparencia como compromiso, la profesionalización como base para la sostenibilidad, la educación como inversión transformadora y la confianza como patrimonio colectivo.</p>
+    <p>Si esta experiencia puede inspirar a otras organizaciones de América Latina a crear alianzas, invertir en equipos calificados, valorar a sus voluntarios, compartir responsabilidades y buscar sinergias en torno a propósitos comunes, su impacto habrá trascendido los límites de la campaña.</p>
+    <p>Ese es, al final, uno de los mayores valores de estar en red: hacer que aquello que aprendemos en una iniciativa deje de pertenecernos únicamente a nosotros y pase a fortalecer a muchos otros. Cuando compartimos conocimiento, multiplicamos posibilidades. Cuando compartimos propósito, ampliamos el impacto.</p>
+
+    <div class="fb-nota">
+      <div class="fb-nota-titulo">Nota de reconocimiento</div>
+      <p>Nuestro reconocimiento y agradecimiento especial a miembros de la RFE que también integran el Consejo del Fundo de Bolsas y que, con su compromiso, generosidad y participación activa, encarnan el espíritu de esta iniciativa: la Familia Feffer, representada por la Fundação Arymax, Natalie Klein Duek y Raphael Klein representada por el Instituto Golden Tree. Su involucramiento demuestra el valor de liderazgos filantrópicos que no solo aportan recursos, sino también tiempo, experiencia, confianza y capacidad de articulación al servicio de un propósito común.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 RFE LATAM — Red Judía de Filantropía Estratégica</p>
+</footer>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById('mobile-menu');
+  var btn = document.getElementById('hamburger-btn');
+  menu.classList.toggle('open');
+  btn.textContent = menu.classList.contains('open') ? '✕' : '☰';
+}
+function closeMenu() {
+  var menu = document.getElementById('mobile-menu');
+  var btn = document.getElementById('hamburger-btn');
+  menu.classList.remove('open');
+  btn.textContent = '☰';
+}
+</script>
+</body>
+</html>
